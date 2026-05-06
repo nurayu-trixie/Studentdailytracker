@@ -1,149 +1,88 @@
-📚 Student Daily Tracker
-
-Platform belajar cerdas untuk memantau perkembangan nilai harian siswa dengan analisis AI yang dipersonalisasi.
-Dibangun menggunakan React, TypeScript, dan Tailwind CSS — responsif untuk Android dan Desktop.
-
-🚀 Tentang Aplikasi
-
-Student Daily Tracker adalah aplikasi web untuk membantu siswa:
-
-Mencatat nilai harian
-Memantau perkembangan akademik
-Mendapatkan analisis dan rekomendasi belajar otomatis
-
-Semua data disimpan secara lokal (localStorage), sehingga:
-
-🔒 Privasi terjaga
-🌐 Bisa digunakan tanpa internet
-✨ Fitur Utama
-📊 Dashboard
-Statistik nilai (rata-rata, target, progress, nilai tertinggi)
-Form input nilai
-Bar chart per mata pelajaran
-AI Insights (rekomendasi belajar)
-📜 Riwayat Nilai
-Daftar semua nilai
-🔍 Pencarian & filter
-🔃 Sorting
-🏷️ Label kualitas nilai
-🗑️ Hapus data
-👤 Profil
-Level belajar
-Radar chart kemampuan
-Sistem badge
-Edit nama pengguna
-🤖 AI Learning Assistant
-Analisis nilai otomatis
-Deteksi mata pelajaran lemah
-Rekomendasi belajar personal
-🌙 Dark Mode
-Toggle dark/light mode
-Preferensi tersimpan otomatis
-🛠️ Cara Menjalankan
-1. Persiapan
-
-Pastikan sudah install:
-
-Node.js ≥ 18
-pnpm
-2. Clone Repository
-git clone https://github.com/username/student-daily-tracker.git
-cd student-daily-tracker
-3. Install Dependency
-pnpm install
-4. Jalankan Development
-pnpm dev
-
-Buka di browser:
-
-http://localhost:5173
-5. Build Production
-pnpm build
 📖 Panduan Penggunaan
-🔐 Login
-Masukkan nama & password (min. 4 karakter)
-Password hanya untuk pengaman lokal
-➕ Input Nilai
-Pilih mata pelajaran
-Masukkan nilai (0–100)
-Tambahkan catatan (opsional)
-🎯 Target Nilai
-Atur target dengan slider (50–100)
-Progress otomatis terhitung
-📜 Riwayat
-Cari, filter, dan urutkan nilai
-Hapus data jika diperlukan
-👤 Profil
-Lihat level & statistik
-Edit nama pengguna
-🤖 AI Insights
-Lihat rekomendasi belajar otomatis di Dashboard
-🏆 Sistem Level
-Level	Rata-rata Nilai
-Beginner	< 70
-Intermediate	70 – 79
-Expert	80 – 89
-Master	≥ 90
-🎖️ Badge Pencapaian
+1. Login
+Masukkan nama lengkap pada kolom yang tersedia
+Masukkan password minimal 4 karakter
+Klik tombol "Masuk Sekarang"
+Catatan: Password bers ifat lokal dan tidak dikirim ke server mana pun.
+
+2. Dashboard
+Kartu Statistik
+
+Kartu	Keterangan
+Rata-rata	Nilai rata-rata dari semua mata pelajaran
+Target	Target nilai yang kamu tentukan sendiri
+Progress	Persentase pencapaian terhadap target
+Tertinggi	Nilai tertinggi yang pernah dicatat
+Input Nilai Baru
+
+Pilih mata pelajaran dari dropdown
+Masukkan nilai antara 0 hingga 100
+Tambahkan catatan opsional
+Klik "Tambah Nilai" atau tekan Enter
+Atur Target Nilai
+
+Geser slider untuk mengubah target (rentang: 50 – 100)
+Progress bar akan memperbarui secara otomatis
+3. Riwayat Nilai
+Label Kualitas Nilai
+
+Label	Rentang
+🟢 Sangat Baik	90 – 100
+🔵 Baik	80 – 89
+🟡 Cukup	70 – 79
+🔴 Perlu Peningkatan	0 – 69
+4. Profil
+Sistem Level
+
+Level	Rata-rata
+🌱 Beginner	Di bawah 70
+📘 Intermediate	70 – 79
+🎓 Expert	80 – 89
+👑 Master	90 ke atas
+Badge Pencapaian
+
 Badge	Syarat
-Nilai Pertama	Input nilai pertama
-10 Nilai	Total 10 nilai
-Nilai 100	Pernah dapat 100
-Nilai Konsisten	≥ 5 nilai tercatat
-Rata-rata 85+	Rata-rata ≥ 85
-Nilai Meningkat	Nilai terbaru > pertama
-## 📂 Struktur Proyek
-
-
+⭐ Nilai Pertama	Berhasil input nilai pertama kali
+📖 10 Nilai	Total 10 nilai sudah tercatat
+🏆 Nilai 100	Pernah mendapat nilai sempurna
+🔥 Nilai Konsisten	Total 5 nilai atau lebih tercatat
+🏅 Rata-rata 85+	Rata-rata keseluruhan mencapai 85 atau lebih
+📈 Nilai Meningkat	Nilai terbaru lebih tinggi dari nilai pertama
+🗂️ Struktur Proyek
 src/
 ├── app/
-│ ├── components/
-│ │ ├── AIAssistant.tsx
-│ │ └── Layout.tsx
-│ │
-│ ├── context/
-│ │ └── AppContext.tsx
-│ │
-│ ├── pages/
-│ │ ├── Login.tsx
-│ │ ├── Dashboard.tsx
-│ │ ├── History.tsx
-│ │ └── Profile.tsx
-│ │
-│ ├── App.tsx
-│ └── routes.tsx
-│
+│   ├── components/
+│   │   ├── AIAssistant.tsx
+│   │   └── Layout.tsx
+│   ├── context/
+│   │   └── AppContext.tsx
+│   ├── pages/
+│   │   ├── Login.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── History.tsx
+│   │   └── Profile.tsx
+│   ├── App.tsx
+│   └── routes.tsx
 └── styles/
-├── fonts.css
-├── index.css
-└── theme.css
-⚙️ Teknologi
-React 18 + TypeScript
-Tailwind CSS v4
-React Router v7
-Recharts
-Lucide React
-Vite
-Google Fonts (Poppins)
+    ├── fonts.css
+    ├── index.css
+    └── theme.css
+🛠️ Teknologi
+Teknologi	Kegunaan
+React 18 + TypeScript	UI Framework dengan type safety
+Tailwind CSS v4	Utility-first styling
+React Router v7	Client-side routing
+Recharts	Bar Chart dan Radar Chart
+Lucide React	Ikon
+Vite	Build tool
+Google Fonts Poppins	Tipografi
 💾 Penyimpanan Data
+Key	Isi
+studentName	Nama pengguna
+grades	Seluruh data nilai dalam format JSON
+targetScore	Angka target nilai
+darkMode	Preferensi tema (true/false)
+Perhatian: Data akan hilang jika cache browser dihapus atau menggunakan mode Incognito.
 
-Data disimpan di localStorage:
-
-studentName
-grades
-targetScore
-darkMode
-
-⚠️ Data akan hilang jika:
-
-Cache browser dihapus
-Menggunakan mode incognito
-📜 Lisensi
-
-Menggunakan lisensi MIT
-Bebas digunakan, dimodifikasi, dan didistribusikan.
-
-👨‍💻 Developer
-
-Muhammad Akhdan Habibi
-SMK XITKJ3
+📄 Lisensi
+Proyek ini menggunakan lisensi MIT — bebas digunakan, dimodifikasi, dan didistribusikan
