@@ -1,6 +1,6 @@
 Student Daily Tracker
 Platform belajar cerdas untuk memantau perkembangan nilai harian siswa dengan analisis AI yang dipersonalisasi. Dibuat menggunakan React, TypeScript, dan Tailwind CSS — responsif untuk Android dan Desktop.
-
+---
 Tentang Aplikasi
 Student Daily Tracker adalah aplikasi web yang membantu siswa mencatat, memantau, dan menganalisis nilai akademik mereka secara harian. Semua data tersimpan secara lokal di browser (localStorage), sehingga privasi pengguna terjaga dan aplikasi tetap bisa digunakan tanpa koneksi internet.
 
