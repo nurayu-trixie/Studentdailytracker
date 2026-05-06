@@ -29,7 +29,7 @@ pnpm install
 
 # Jalankan server development
 pnpm dev
-Buka browser dan akses http://localhost:5173
+Buka browser dan akses http://localhost:5173 atau https://studentdailytracker-production.up.railway.app/
 
 Untuk build produksi:
 
