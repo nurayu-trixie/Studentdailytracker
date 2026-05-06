@@ -1,4 +1,4 @@
-*Student Daily Tracker*
+## *Student Daily Tracker*
 Platform belajar cerdas untuk memantau perkembangan nilai harian siswa dengan analisis AI yang dipersonalisasi. Dibuat menggunakan React, TypeScript, dan Tailwind CSS — responsif untuk Android dan Desktop.
 
 ## Tentang Aplikasi
