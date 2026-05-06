@@ -47,7 +47,7 @@ Panduan Penggunaan
 
 6. Baca Rekomendasi AI Gulir ke bawah di halaman Dashboard untuk melihat panel AI Learning Insights. Panel ini secara otomatis menganalisis nilaimu dan memberikan rekomendasi belajar yang relevan.
 
-Sistem Level
+*Sistem Level*
 Level	Rata-rata Nilai
 Beginner	Di bawah 70
 Intermediate	70 hingga 79
@@ -61,7 +61,9 @@ Nilai 100	Pernah mendapat nilai sempurna
 Nilai Konsisten	Total 5 nilai atau lebih tercatat
 Rata-rata 85+	Rata-rata keseluruhan mencapai 85
 Nilai Meningkat	Nilai terbaru lebih tinggi dari nilai pertama
-Struktur Proyek
+
+
+*Struktur Proyek*
 src/
 ├── app/
 │   ├── components/
@@ -80,7 +82,9 @@ src/
     ├── fonts.css
     ├── index.css
     └── theme.css
-Teknologi
+
+    
+*Teknologi*
 React 18 dengan TypeScript
 Tailwind CSS v4
 React Router v7
@@ -97,9 +101,9 @@ targetScore — angka target nilai
 darkMode — preferensi tema gelap/terang
 Data akan hilang jika cache browser dihapus atau menggunakan mode Incognito.
 
-Lisensi
+*Lisensi*
 Proyek ini menggunakan lisensi MIT. Bebas digunakan, dimodifikasi, dan didistribusikan.
 
 Dibuat untuk membantu para pelajar memantau dan meningkatkan prestasi akademik mereka setiap hari.
-
 Muhammad Akhdan Habibi XITKJ3
+
