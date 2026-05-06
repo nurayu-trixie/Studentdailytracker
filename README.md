@@ -92,29 +92,31 @@ Nilai 100	Pernah dapat 100
 Nilai Konsisten	≥ 5 nilai tercatat
 Rata-rata 85+	Rata-rata ≥ 85
 Nilai Meningkat	Nilai terbaru > pertama
-📂 Struktur Proyek
+## 📂 Struktur Proyek
+
+
 src/
 ├── app/
-│   ├── components/
-│   │   ├── AIAssistant.tsx
-│   │   └── Layout.tsx
-│   │
-│   ├── context/
-│   │   └── AppContext.tsx
-│   │
-│   ├── pages/
-│   │   ├── Login.tsx
-│   │   ├── Dashboard.tsx
-│   │   ├── History.tsx
-│   │   └── Profile.tsx
-│   │
-│   ├── App.tsx
-│   └── routes.tsx
+│ ├── components/
+│ │ ├── AIAssistant.tsx
+│ │ └── Layout.tsx
+│ │
+│ ├── context/
+│ │ └── AppContext.tsx
+│ │
+│ ├── pages/
+│ │ ├── Login.tsx
+│ │ ├── Dashboard.tsx
+│ │ ├── History.tsx
+│ │ └── Profile.tsx
+│ │
+│ ├── App.tsx
+│ └── routes.tsx
 │
 └── styles/
-    ├── fonts.css
-    ├── index.css
-    └── theme.css
+├── fonts.css
+├── index.css
+└── theme.css
 ⚙️ Teknologi
 React 18 + TypeScript
 Tailwind CSS v4
